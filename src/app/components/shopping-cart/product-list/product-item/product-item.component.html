@@ -1,0 +1,79 @@
+        <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" [src]="productItem.imageUrl" />
+            <div class="card-body" style="height:320px;">
+            <h5>{{ productItem.name}}</h5><hr>
+            <h6>{{ productItem.price | currency:'USD' }}</h6>
+              <p class="card-text">{{productItem.description}}</p>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <button type="button" 
+                    class="btn btn-sm btn-primary" 
+                    style="font-size:small;"
+                    (click)="handleAddToCart()"
+                    >Add to Cart</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" style="font-size:small;">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- <div class="row">
+    <div class="col-4" *ngFor="let i of productList">
+        <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://lh3.googleusercontent.com/proxy/vlbUtKqTt_17xMT2mSvpR-g3wIUvaTJKkrSI7ZopRjL1ZTcIZep3B6TN9uCSsOZZhy0Nc0jOaPBf47x1mrNpFiaFSvuCgdPInKs07wvdGbvjUyruetQrYmVUizhrs3BuD0fvOydlZA">
+            <div class="card-body" style="height:430px;">
+            <h5>3D Maneuver Gear</h5>
+            <h6>Price : $200</h6>
+              <p class="card-text">The vertical maneuvering equipment is a set of equipment developed by humans allowing for great mobility. The equipment enables the user to fight in a 3D space as opposed to a 2D one. The equipment itself takes the form of a body harness that encompasses much of the body below the neck.</p>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-primary">Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-4" *ngFor="let i of productList">
+        <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://images-na.ssl-images-amazon.com/images/I/810UHUV3P8L._AC_SX425_.jpg">
+            <div class="card-body" style="height:430px;">
+            <h5>Excalibur</h5>
+            <h6>Price : $300</h6>
+              <p class="card-text">Excalibur: Sword of Promised Victory is the strongest and most majestic holy sword that symbolizes King Arthur. As that which can be called the physical actualization of her ideals and the symbol of her heroism, it is her greatest and most powerful Noble Phantasm.</p>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-primary">Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4" *ngFor="let i of productList">
+        <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://img2.cgtrader.com/items/1999337/57e29ed773/berserk-sword-dragonslayer-fan-art-3d-print-model-3d-model-stl.jpg">
+            <div class="card-body" style="height:430px;">
+            <h5>Dragon Slayer</h5>
+            <h6>Price : $450</h6>
+              <p class="card-text">It was too big to be called a sword. Massive, thick, heavy, and far too rough. Indeed, it was a heap of raw iron. The Dragon Slayer is the massive sword Guts has wielded as his signature weapon since surviving the Eclipse.</p>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-primary">Add to Cart</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

@@ -1,0 +1,17 @@
+<div class="row mb-3">
+    <div class="card">
+        <div class="card-body">
+            <p>
+                Hello Adventurer, welcome to the town of Angular!
+                Here you can explore all the exciting stuff like meeting weird monster, learning new spell, and discovering rare item.
+                But first, you need some weapon/spell to accompany you along the way!
+                I will give you $1000, so choose your weapon/spell wisely~
+            </p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4" *ngFor="let product of productList"> 
+      <app-product-item [productItem]="product"></app-product-item>
+    </div>
+</div>
