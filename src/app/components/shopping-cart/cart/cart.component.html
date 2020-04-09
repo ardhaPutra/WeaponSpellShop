@@ -2,8 +2,8 @@
 <button type="button" *ngIf="cartTotal === 0" (click)="NullTransaction()" class="btn btn-primary btn-sm">Buy Items</button>
 
 <ul *ngIf="cartItems.length > 0" class="list-group">
+    <strong class="mb-2">Added To Cart</strong>
     <li class="list-group-item" *ngFor="let item of cartItems">
-        <strong>Added To Cart</strong>
         <app-cart-item [cartItem]="item"></app-cart-item>
     </li>
 
