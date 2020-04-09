@@ -18,12 +18,16 @@ export class CartComponent implements OnInit {
 
   cartTotal = 0
 
-  constructor(private msg: MessengerService) { }
+  constructor(private msg: MessengerService) {}
 
   ngOnInit(): void {
     this.msg.getMsg().subscribe((product: Product) => {
       this.addProductToCart(product)
     })
+  }
+
+  Transaction() {
+    alert("Transaction Success");
   }
 
   addProductToCart(product: Product) {
