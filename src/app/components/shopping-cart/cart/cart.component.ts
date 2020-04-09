@@ -30,6 +30,10 @@ export class CartComponent implements OnInit {
     alert("Transaction Success");
   }
 
+  NullTransaction() {
+    alert("Please Buy Something");
+  }
+
   addProductToCart(product: Product) {
 
     let productExists = false
